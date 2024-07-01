@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
-import Singleblog from "@/components/single-blog";
-import HeaderTwo from "@/components/header-dos";
+import Singleblog from "../../components/single-blog";
+import HeaderTwo from "../../components/header-dos";
 export default function Blog({ resultado }) {
   return (
     <Layout
