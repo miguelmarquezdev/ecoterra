@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
-import Singletour from "@/components/single-tour";
-import HeaderTwo from "@/components/header-dos";
+import Singletour from "../../components/single-tour";
+import HeaderTwo from "../../components/header-dos";
 export default function Producto({ resultado }) {
   
   return (
