@@ -1,0 +1,147 @@
+.barra {
+  display: flex;
+  align-items: center;
+}
+.bgfondo::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,42,154,.34);
+}
+.bannerHeader{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 24px;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  background-color: #fff;
+  box-shadow: inset 2px 2px 3px 0 rgba(255,255,255,.5);
+}
+.cirulo{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fab314;
+  border-radius: 100%;
+}
+/* navegacion */
+.navegacion{
+  font-weight: 400;
+}
+.navegacion a{
+  height: none;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.navegaciontwo a{
+  height: none;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.navegacion a.active{
+  color: white;
+}
+.navegaciontwo a.active{
+  color: #0092e5;
+}
+@media (min-width: 767px) {
+  .navegacion a{
+    height: 100%;
+    padding: 1.5rem 0;
+  }
+  .navegaciontwo a{
+    height: 100%;
+    padding: 1.5rem 0;
+  }
+}
+@media (min-width: 992px) {
+  .navegacion a::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 2px;
+    background: white;
+    left: 120%;
+    bottom: 1rem;
+    transition: .6s;
+  }
+  .navegaciontwo a::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 2px;
+    background: #0089d7;
+    left: 120%;
+    bottom: 1rem;
+    transition: .6s;
+  }
+
+  .navegacion a:hover::before {
+    animation: eeee 0.3s 1 ease-in-out;
+    left: -10%;
+    transition: .2s;
+  }
+  .navegaciontwo a:hover::before {
+    animation: eeee 0.3s 1 ease-in-out;
+    left: -10%;
+    transition: .2s;
+  }
+  .navegacion a.active{
+    color: white;
+  }
+  .navegaciontwo a.active{
+    color: #0089d7;
+  }
+   .navegacion a.active::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 2px;
+    background: white;
+    border: 0;
+    left: 0;
+    bottom: 1rem;
+    transition: .6s;
+  }
+  .navegaciontwo a.active::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 2px;
+    background: #0089d7;
+    border: 0;
+    left: 0;
+    bottom: 1rem;
+    transition: .6s;
+  }
+  .navegacion a{
+    height: 100%;
+    padding: 1.5rem 0;
+  }
+  .navegaciontwo a{
+    height: 100%;
+    padding: 1.5rem 0;
+  }
+}
+
+/* fin navegacion */
+@keyframes eeee {
+  0% {
+    left: -120%;
+
+  }
+
+  100% {
+    left: 0%;
+  }
+
+}
+
+
+

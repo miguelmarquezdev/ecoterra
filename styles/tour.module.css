@@ -1,0 +1,25 @@
+.w75 {
+  width: 100%;
+}
+.w25 {
+  width: 100%;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
+  z-index: 2;
+  padding-bottom: 3rem;
+  box-shadow: 0 8px 16px 0 rgba(15, 41, 77, 0.08);
+  border-radius: 10px;
+  padding: 2rem;
+  border-top: 10px solid #334eff;
+}
+@media (min-width: 992px) {
+  .w75 {
+    width: 75%;
+  }
+  .w25 {
+    width: 25%;
+  }
+}

@@ -1,0 +1,114 @@
+.abtn:after {
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  width: 200%;
+  height: 100%;
+  transform: translate3d(15px, -50%, 0);
+  opacity: 0;
+  background: #0092e5;
+  background-size: 100% auto;
+  content: "";
+  transition: transform 0.6s, opacity 0.6s;
+  transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+.abtn:hover:after {
+  transform: translate3d(45px, -50%, 0);
+  opacity: 1;
+}
+
+.a-btn__fill {
+  position: absolute;
+  top: var(--btn-bg-y);
+  left: var(--btn-bg-x);
+  border: var(--btn-bg-radius) solid #0092e5;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(0);
+  transition: transform 0.6s, opacity 0.2s, color 0.3s;
+  transition-timing-function: var(--btn-fill-ease), ease-out, ease-in;
+  transition-delay: 0s, 0.2s;
+  opacity: 0;
+  content: "";
+}
+
+
+.burbujastwo span {
+  background: rgba(255,255,255,.5);
+  border-radius: 100%;
+  position: absolute;
+  bottom: -300px;
+  animation: animarburbujastwo 20s linear infinite;
+}
+
+.burbujastwo span:nth-child(1) {
+  width: 10px;
+  height: 10px;
+  left: 40px;
+  animation-duration: 8s;
+  background: #0092e5;
+}
+
+.burbujastwo span:nth-child(2) {
+  width: 11px;
+  height: 11px;
+  left: 25%;
+  animation-duration: 16s;
+}
+
+
+.burbujastwo span:nth-child(3) {
+  width: 12px;
+  height: 12px;
+  left: 40%;
+  animation-duration: 10s;
+  background: #0092e5;
+}
+
+.burbujastwo span:nth-child(4) {
+  width: 13px;
+  height: 13px;
+  left: 50%;
+  animation-duration: 20s;
+}
+
+.burbujastwo span:nth-child(5) {
+  width: 14px;
+  height: 14px;
+  left: 65%;
+  animation-duration: 13s;
+  background: #0092e5;
+}
+
+.burbujastwo span:nth-child(6) {
+  width: 15px;
+  height: 15px;
+  left: 85%;
+  animation-duration: 18s;
+}
+
+.burbujastwo span:nth-child(7) {
+  width: 16px;
+  height: 16px;
+  left: 90%;
+  animation-duration: 12s;
+}
+
+@keyframes animarburbujastwo {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  3% {
+    width: 13px;
+    height: 13px;
+  }
+  50% {
+    margin-left: 20px;
+    opacity: 0.2;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+

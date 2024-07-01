@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  box-sizing: border-box;
+  color: #041225;
+  font-family: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .wp-content h2 {
+    @apply text-2xl font-bold text-black mb-5;
+  }
+  .wp-content h3 {
+    @apply text-xl font-bold text-black mt-5 mb-2;
+  }
+  .wp-content ul {
+    @apply list-disc ml-5;
+  }
+  .wp-content p,
+  .wp-content ul {
+    @apply mb-5;
+  }
+  .wp-content strong {
+    @apply font-semibold;
+  }
+}
+
+.burbujas span {
+  background: rgba(255,255,255,.5);
+  border-radius: 100%;
+  position: absolute;
+  bottom: -300px;
+  animation: animarburbujas 20s linear infinite;
+}
+
+.burbujas span:nth-child(1) {
+  width: 10px;
+  height: 10px;
+  left: 40px;
+  animation-duration: 8s;
+  background: #0092e5;
+}
+
+.burbujas span:nth-child(2) {
+  width: 11px;
+  height: 11px;
+  left: 25%;
+  animation-duration: 16s;
+}
+
+
+.burbujas span:nth-child(3) {
+  width: 12px;
+  height: 12px;
+  left: 40%;
+  animation-duration: 10s;
+  background: #0092e5;
+}
+
+.burbujas span:nth-child(4) {
+  width: 13px;
+  height: 13px;
+  left: 50%;
+  animation-duration: 20s;
+}
+
+.burbujas span:nth-child(5) {
+  width: 14px;
+  height: 14px;
+  left: 65%;
+  animation-duration: 13s;
+  background: #0092e5;
+}
+
+.burbujas span:nth-child(6) {
+  width: 15px;
+  height: 15px;
+  left: 85%;
+  animation-duration: 18s;
+}
+
+.burbujas span:nth-child(7) {
+  width: 16px;
+  height: 16px;
+  left: 90%;
+  animation-duration: 12s;
+}
+
+@keyframes animarburbujas {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  3% {
+    width: 13px;
+    height: 13px;
+  }
+  50% {
+    margin-left: 20px;
+    opacity: 0.2;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+/* 
+.seo {
+  @apply bg-lime-600 text-white;
+}
+.sem {
+  @apply bg-pink-600 text-white;
+}
+.diseno-grafico{
+  @apply bg-indigo-600 text-white;
+}
+.diseno-web{
+  @apply bg-sky-600 text-white;
+}
+.redes-sociales{
+  @apply bg-amber-600 text-white;
+} */
+
