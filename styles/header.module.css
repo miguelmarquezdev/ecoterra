@@ -48,7 +48,7 @@
   color: white;
 }
 .navegaciontwo a.active{
-  color: #0092e5;
+  color: #005a3a;
 }
 @media (min-width: 767px) {
   .navegacion a{
@@ -76,7 +76,7 @@
     position: absolute;
     width: 120%;
     height: 2px;
-    background: #0089d7;
+    background: #00261c;
     left: 120%;
     bottom: 1rem;
     transition: .6s;
@@ -96,7 +96,7 @@
     color: white;
   }
   .navegaciontwo a.active{
-    color: #0089d7;
+    color: #00261c;
   }
    .navegacion a.active::after {
     content: "";
@@ -114,7 +114,7 @@
     position: absolute;
     width: 120%;
     height: 2px;
-    background: #0089d7;
+    background: #00261c;
     border: 0;
     left: 0;
     bottom: 1rem;

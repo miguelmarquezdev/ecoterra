@@ -13,9 +13,9 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        primary: "#0092e5",
-        laight:"#f5f7fa",
-        secondary:"#142331",
+        primary: "#ffc641",
+        laight:"#f9f8f5",
+        secondary:"#00261c",
       },
       borderRadius: {
         primary: "20px",
@@ -25,11 +25,11 @@ module.exports = {
         grande: "18px",
       },
       fontFamily: {
-        "primary-family": "Outfit",
+        "primary-family": ["Playwrite IT Moderna", "cursive"]
       },
       backgroundImage: {
-        'bannertwo': "url('/img/banners/banner-2.jpg')",
-        'bannerpages': "url('/img/banners/banner-pages.webp')",
+        'ecoterra': "url('/img/banners/ecoterrralodge.webp')",
+        'lodge': "url('/img/banners/lodge.webp')",
         'machu-picchu': "url('/img/mapi.jpg')",
         'cosmo': "url('/img/banners/main-banner.jpg')",
         'celar': "url('/img/banners/explore-cusco.webp')",

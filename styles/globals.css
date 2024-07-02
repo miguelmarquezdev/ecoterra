@@ -10,6 +10,9 @@ html {
 
 @layer utilities {
   .wp-content h2 {
+    @apply text-2xl font-bold text-black mb-5 font-primary-family;
+  }
+  .wp-content h2 {
     @apply text-2xl font-bold text-black mb-5;
   }
   .wp-content h3 {
@@ -25,10 +28,20 @@ html {
   .wp-content strong {
     @apply font-semibold;
   }
+  .wp-content ol li {
+    @apply list-decimal;
+  }
+  .wp-content ol,
+  .wp-content ul {
+    @apply pl-10;
+  }
+  .wp-content ul li {
+    @apply list-disc;
+  }
 }
 
 .burbujas span {
-  background: rgba(255,255,255,.5);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
   position: absolute;
   bottom: -300px;
@@ -40,7 +53,7 @@ html {
   height: 10px;
   left: 40px;
   animation-duration: 8s;
-  background: #0092e5;
+  background: #ffc641;
 }
 
 .burbujas span:nth-child(2) {
@@ -50,13 +63,12 @@ html {
   animation-duration: 16s;
 }
 
-
 .burbujas span:nth-child(3) {
   width: 12px;
   height: 12px;
   left: 40%;
   animation-duration: 10s;
-  background: #0092e5;
+  background: #ffc641;
 }
 
 .burbujas span:nth-child(4) {
@@ -71,7 +83,7 @@ html {
   height: 14px;
   left: 65%;
   animation-duration: 13s;
-  background: #0092e5;
+  background: #ffc641;
 }
 
 .burbujas span:nth-child(6) {
@@ -121,4 +133,3 @@ html {
 .redes-sociales{
   @apply bg-amber-600 text-white;
 } */
-

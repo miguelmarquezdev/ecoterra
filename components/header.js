@@ -12,20 +12,28 @@ function Navmenu({ open, setOpen }) {
       link: "/",
     },
     {
-      name: "Diseño Web",
-      link: "/diseno-web",
+      name: "Nosotros",
+      link: "/nosotros",
     },
     {
-      name: "Seo",
-      link: "/seo",
+      name: "Como llegar",
+      link: "/como-llegar",
     },
     {
-      name: "Publicidad",
-      link: "/sem",
+      name: "Habitaciones",
+      link: "/habitaciones",
     },
     {
-      name: "Blog",
-      link: "/blog",
+      name: "Bar & Restaurante",
+      link: "/bar-restaurante",
+    },
+    {
+      name: "Tours",
+      link: "https://sapadventures.org",
+    },
+    {
+      name: "Contacto",
+      link: "https://wa.link/bzlfw6",
     },
   ];
   return (
@@ -63,14 +71,14 @@ export default function Header(props) {
       <div className={`max-w-screen-xl mx-auto ${styles.barra} justify-between`}>
         <Link href="/">
           <picture>
-          <source media="(max-width: 799px)" srcSet="/img/logo-mia-solutions.svg"></source>   
-          <source media="(min-width: 800px)" srcSet="/img/logo-mia-solutions.svg"></source>
+          <source media="(max-width: 799px)" srcSet="/img/logo-ecoterra.svg"></source>   
+          <source media="(min-width: 800px)" srcSet="/img/logo-ecoterra.svg"></source>
           <Image
-            src="/img/logo-mia-solutions.svg"
+            src="/img/logo-ecoterra.svg"
             width={150}
             height={37}
             alt="imagen logotipo"
-            className="w-36 sm:w-36 md:w-36 lg:w-60 my-7 sm:my-2 md:my-0 lg:my-8"
+            className="w-36 sm:w-36 md:w-36 lg:w-40 my-7 sm:my-2 md:my-0 lg:my-8"
             media="(min-width: 800px)"
           />
           </picture>
