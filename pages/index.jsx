@@ -6,6 +6,11 @@ import { GoArrowDownRight } from "react-icons/go";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { IoIosStar } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
 
 export default function Home({ resultado, trabajos, blogs }) {
   console.log(resultado);
@@ -46,6 +51,37 @@ export default function Home({ resultado, trabajos, blogs }) {
               entorno tropical, ideal tanto para aventureros como para aquellos
               que desean relajarse bajo el sol.
             </p>
+            <div className="text-white text-3xl flex gap-5">
+              <a
+                href="https://www.facebook.com/profile.php?id=61556343123926"
+                target="_blank"
+                className="hover:scale-125 transition-all duration-200"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61556343123926"
+                target="_blank"
+                className="hover:scale-125 transition-all duration-200"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.tiktok.com/@ecoterralodge"
+                target="_blank"
+                className="hover:scale-125 transition-all duration-200"
+              >
+                <FaTiktok />
+              </a>
+              <a
+                href="https://www.youtube.com/@ecoterralodge/videos"
+                target="_blank"
+                className="hover:scale-125 transition-all duration-200"
+              >
+               <FaYoutube />
+              </a>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -111,10 +147,11 @@ export default function Home({ resultado, trabajos, blogs }) {
                 Nos ubicamos en Santa Teresa, la convención, Cusco.
               </p>
               <a
-                href="https://wa.link/bzlfw6" target="_blank"
+                href="https://wa.link/bzlfw6"
+                target="_blank"
                 className="border border-black py-3 px-7 bg-secondary text-white hover:bg-black hover:text-white transition-all duration-300 inline-block mt-10"
               >
-              Solicitar Información
+                Solicitar Información
               </a>
             </div>
             <div className="relative">
@@ -171,7 +208,8 @@ export default function Home({ resultado, trabajos, blogs }) {
                 Nos ubicamos en Santa Teresa, la convención, Cusco.
               </p>
               <a
-                href="https://wa.link/bzlfw6" target="_blank"
+                href="https://wa.link/bzlfw6"
+                target="_blank"
                 className="border border-black py-3 px-7 bg-secondary text-white hover:bg-black hover:text-white transition-all duration-300 inline-block mt-10"
               >
                 Solicitar Informacion
@@ -193,7 +231,8 @@ export default function Home({ resultado, trabajos, blogs }) {
                 Nos ubicamos en Santa Teresa, la convención, Cusco.
               </p>
               <a
-                href="https://sapadventures.org/tour/inca-jungle-trek-4-days/" target="_blank"
+                href="https://sapadventures.org/tour/inca-jungle-trek-4-days/"
+                target="_blank"
                 className="border border-black py-3 px-7 bg-secondary text-white hover:bg-black hover:text-white transition-all duration-300 inline-block mt-10"
               >
                 Ver Tours
@@ -249,14 +288,24 @@ export default function Home({ resultado, trabajos, blogs }) {
               <h3 className="font-bold text-xl">sandra p </h3>
               <span className="text-sm text-neutral-500">10/11/2023</span>
               <p className="italic">
-              Atención cálida y de primera..habitación y camas limpias y confortables.. despertar con el canto de las aves fue una experiencia inolvidable..disfrutamos del paseo y baño en la catarata dentro de la propiedad y de la lección sobre el café...
+                Atención cálida y de primera..habitación y camas limpias y
+                confortables.. despertar con el canto de las aves fue una
+                experiencia inolvidable..disfrutamos del paseo y baño en la
+                catarata dentro de la propiedad y de la lección sobre el café...
               </p>
             </div>
             <div className="border border-neutral-300 p-5 space-y-3">
               <h3 className="font-bold text-xl">Marat Azatjan</h3>
               <span className="text-sm text-neutral-500">07/01/2024</span>
               <p className="italic ">
-              Me encantó la corta estancia en Eco Terra Lodge. Puede relajarse, contemplar el cielo nocturno despejado sin contaminación lumínica, respirar aire limpio, relajarse con el sonido del río y, por supuesto, comer excelente comida, servida por un equipo cálido y acogedor. También podrás meditar y hacer yoga para prepararte para los próximos días en tu caminata a Machu Picchu. Saludos cordiales al equipo y deseando éxito en su proyecto para reforestar aún más esta área. 👌👌👌
+                Me encantó la corta estancia en Eco Terra Lodge. Puede
+                relajarse, contemplar el cielo nocturno despejado sin
+                contaminación lumínica, respirar aire limpio, relajarse con el
+                sonido del río y, por supuesto, comer excelente comida, servida
+                por un equipo cálido y acogedor. También podrás meditar y hacer
+                yoga para prepararte para los próximos días en tu caminata a
+                Machu Picchu. Saludos cordiales al equipo y deseando éxito en su
+                proyecto para reforestar aún más esta área. 👌👌👌
               </p>
             </div>
           </div>
