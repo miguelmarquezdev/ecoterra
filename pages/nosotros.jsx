@@ -21,7 +21,7 @@ export default function Nosotros() {
             </div>
           </div>
         </section>
-        <section className="w-full mx-auto max-w-screen-lg pt-10 pb-20">
+        <section className="w-full mx-auto max-w-screen-lg pt-10 pb-20 px-4 md:px-0">
           <div class="elementor-widget-container wp-content first-line:uppercase first-line:tracking-widest   first-letter:text-7xl first-letter:font-bold first-letter:text-black first-letter:mr-3 first-letter:float-left text-justify">
             <img
               src="../img/banners/ecoterra.webp"

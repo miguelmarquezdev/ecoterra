@@ -24,8 +24,8 @@ export default function Habitaciones() {
             </div>
           </div>
         </section>
-        <section className="w-full max-w-screen-xl mx-auto pb-20">
-          <div className="grid grid-cols-3 gap-10">
+        <section className="w-full max-w-screen-xl mx-auto pb-20 px-4 md:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="border">
               <img
                 src="../img/banners/simple.webp"

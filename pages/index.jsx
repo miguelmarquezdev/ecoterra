@@ -86,11 +86,11 @@ export default function Home({ resultado, trabajos, blogs }) {
         </div>
       </div>
       <main className="relative">
-        <section className="w-full max-w-screen-xl mx-auto py-20 relative">
+        <section className="w-full max-w-screen-xl mx-auto py-20 relative px-4 md:px-0">
           <h2 className="text-center font-bold text-3xl text-secondary mb-10">
             Nuestras Habitaciones
           </h2>
-          <div className="grid grid-cols-2 relative gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 relative gap-10">
             <div className="relative overflow-hidden">
               <img
                 src="../img/banners/primera-foto.webp"
@@ -123,16 +123,16 @@ export default function Home({ resultado, trabajos, blogs }) {
             </div>
           </div>
           <div className="flex justify-center items-center py-10">
-            <a className="border border-black py-3 px-7 text-black hover:bg-black hover:text-white transition-all duration-300">
+            <Link href="./habitaciones" className="border border-black py-3 px-7 text-black hover:bg-black hover:text-white transition-all duration-300">
               Ver todas las Habitaciones
-            </a>
+            </Link>
           </div>
         </section>
-        <section className="w-full max-w-screen-xl mx-auto pb-20 relative mb-20">
+        <section className="w-full max-w-screen-xl mx-auto pb-20 relative mb-20 px-4 md:px-0">
           <h2 className="text-center font-bold text-3xl text-secondary mb-10">
             Actividades
           </h2>
-          <div className="grid grid-cols-3 relative gap-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 relative gap-10 ">
             <div className="xl:pt-16">
               <h3 className="font-bold text-2xl mb-10">
                 Biking, Rafting, Zipline
@@ -160,7 +160,7 @@ export default function Home({ resultado, trabajos, blogs }) {
                 width={800}
                 height={200}
                 alt="diseño web"
-                className="absolute reveal fade-right top-16  w-96 h-[30rem] object-cover"
+                className="absolute reveal fade-right top-16  w-96 md:h-[30rem] object-cover"
               />
             </div>
             <div className="relative">
@@ -169,32 +169,32 @@ export default function Home({ resultado, trabajos, blogs }) {
                 width={800}
                 height={200}
                 alt="diseño web"
-                className="lg:block hidden absolute reveal fade-right right-0 w-96 lg:h-[28rem] h-80 object-cover"
+                className="lg:block hidden md:absolute reveal fade-right right-0 w-96 lg:h-[28rem] h-80 object-cover"
               />
             </div>
           </div>
         </section>
-        <section className="w-full max-w-screen-xl mx-auto py-20 relative">
-          <div className="grid grid-cols-3 relative gap-10 ">
-            <div className="relative">
+        <section className="w-full max-w-screen-xl mx-auto py-20 relative px-4 md:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 relative gap-10 ">
+            <div className="relative order-2">
               <img
                 src="../img/banners/aguas-termales.webp"
                 width={800}
                 height={200}
                 alt="diseño web"
-                className="absolute reveal fade-right top-16  w-96 h-[30rem] object-cover"
+                className="md:absolute reveal fade-right md:top-16  w-full md:w-96 md:h-[30rem] object-cover"
               />
             </div>
-            <div className="relative">
+            <div className="relative ">
               <img
                 src="../img/banners/cocalmayo.webp"
                 width={800}
                 height={200}
                 alt="diseño web"
-                className="lg:block hidden absolute reveal fade-right right-0 w-96 lg:h-[28rem] h-80 object-cover"
+                className="lg:block hidden md:absolute reveal fade-right right-0 w-96 lg:h-[28rem] h-80 object-cover"
               />
             </div>
-            <div className="xl:pt-16">
+            <div className="pt-0 md:pt-16 relative">
               <h3 className="font-bold text-2xl mb-10">
                 Baños Termales de Cocalmayo
               </h3>
@@ -217,9 +217,9 @@ export default function Home({ resultado, trabajos, blogs }) {
             </div>
           </div>
         </section>
-        <section className="w-full max-w-screen-xl mx-auto py-20 relative">
-          <div className="grid grid-cols-3 relative gap-10 ">
-            <div className="xl:pt-16">
+        <section className="w-full max-w-screen-xl mx-auto py-20 relative px-4 md:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 relative gap-10 ">
+            <div className="xl:pt-16 relative">
               <h3 className="font-bold text-2xl mb-10">Tours Populares</h3>
               <p>
                 Lo mejor en aventura extrema en Perú. La tirolesa Vertikal
@@ -244,7 +244,7 @@ export default function Home({ resultado, trabajos, blogs }) {
                 width={800}
                 height={200}
                 alt="diseño web"
-                className="absolute reveal fade-right top-16  w-96 h-[30rem] object-cover"
+                className="md:absolute reveal fade-right top-16  w-96 md:h-[30rem] object-cover"
               />
             </div>
             <div className="relative">
@@ -258,7 +258,7 @@ export default function Home({ resultado, trabajos, blogs }) {
             </div>
           </div>
         </section>
-        <section className="mt-10 w-full max-w-screen-xl mx-auto py-20 relative">
+        <section className="md:mt-10 w-full max-w-screen-xl mx-auto md:py-20 pb-20 relative px-4 md:px-0">
           <h2 className="text-center font-bold text-3xl text-secondary mb-10">
             Comentarios de nuestros clientes
           </h2>
@@ -273,7 +273,7 @@ export default function Home({ resultado, trabajos, blogs }) {
               <IoIosStar className="text-4xl" />
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="border border-neutral-300 p-5 space-y-3">
               <h3 className="font-bold text-xl">Mari jrz rmz</h3>
               <span className="text-sm text-neutral-500">20/03/2024</span>
