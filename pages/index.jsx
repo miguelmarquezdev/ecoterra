@@ -128,7 +128,7 @@ export default function Home({ resultado, trabajos, blogs }) {
             </Link>
           </div>
         </section>
-        <section className="w-full max-w-screen-xl mx-auto pb-20 relative mb-20 px-4 md:px-0">
+        <section className="w-full max-w-screen-xl mx-auto md:pb-20 relative md:mb-20 px-4 md:px-0">
           <h2 className="text-center font-bold text-3xl text-secondary mb-10">
             Actividades
           </h2>
@@ -160,7 +160,7 @@ export default function Home({ resultado, trabajos, blogs }) {
                 width={800}
                 height={200}
                 alt="diseño web"
-                className="absolute reveal fade-right top-16  w-96 md:h-[30rem] object-cover"
+                className="md:absolute reveal fade-right md:top-16  w-96 md:h-[30rem] object-cover"
               />
             </div>
             <div className="relative">
